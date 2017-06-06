@@ -46,6 +46,7 @@ for name in $app_names; do
     if [ "$name" != "$app_name" ]
     then
       # TO DO: clean up blue
-      
+      cf delete "$app_name" -f
+      cf rename "$name" "$app_name"
     fi
 done
