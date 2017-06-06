@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -ex
 
 version=`cat version/number`
 
@@ -46,5 +46,6 @@ for name in $app_names; do
     if [ "$name" != "$app_name" ]
     then
       # TO DO: clean up blue
+      
     fi
 done
